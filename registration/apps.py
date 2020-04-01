@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class RegistrationConfig(AppConfig):
-    name = 'registration'
+class MainpageConfig(AppConfig):
+    name = 'MainPage'

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Переопределить класс, city на note и создать его в models.py-->
+<ul>
+  {% for city in object_list %}
+    <li>
+      {{ city.name }}, {{ city.state }}
+    </li>
+  {% endfor %}
+</ul>
+</body>
+</html>
