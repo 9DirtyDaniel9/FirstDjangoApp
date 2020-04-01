@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'login/style.css' %}">
+</head>
+
+{% block content %}
+<h1 class="trapper">Войти на сайт</h1>
+
+<body>
+<div class="col-4">
+<form id="add_form" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button form="add_form" type="submit" class="login-button">>Войти</button>
+</form>
+</div>
+</body>
+{% endblock %}
+</html>
